@@ -14,6 +14,6 @@ const interval = setInterval(() => {
     <div data-content="Hours">${hours < 10 ? `0${hours}` : hours}</div>
     <div data-content="Minutes">${minutes < 10 ? `0${minutes}` : minutes}</div>
     <div data-content="Seconds">${seconds < 10 ? `0${seconds}` : seconds}</div>
-    <div data-content="Seconds">${hours >= 12 ? 'PM' : 'AM'}</div>
+    <div data-content="Seconds">${hours > 12 ? 'PM' : 'AM'}</div>
     `
 }, 1000);
