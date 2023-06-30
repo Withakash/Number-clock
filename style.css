@@ -14,6 +14,7 @@ html {
   height: 100vh;
   background: linear-gradient(rgb(18 17 17 / 52%), rgb(2 2 2 / 12%)), url(bg.jpg) center no-repeat;  background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .countdown-wrapper {
@@ -62,3 +63,69 @@ html {
   position: absolute;
   bottom: -6rem;
 }
+
+
+@media only screen and (max-width: 900px) {
+
+
+  html{
+    font-size: 62%;
+  }
+
+  .countdown-wrapper {
+    top: 12%;
+     display: flex;
+       justify-content: center;
+       align-items: center;
+  }
+
+  .countdown {
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-height: 1130px) {
+        html{
+          font-size: 55%;
+        }
+}
+
+@media only screen and (max-height: 1000px) {
+        html{
+          font-size: 50%;
+        }
+}
+@media only screen and (max-height: 900px) {
+        html{
+          font-size: 45%;
+        }
+}
+@media only screen and (max-height: 800px) {
+        html{
+          font-size: 40%;
+        }
+}
+@media only screen and (max-height: 700px) {
+       .countdown-wrapper {
+           top: 10%;
+        }
+        html{
+          font-size: 35%;
+        }
+}
+@media only screen and (max-height: 600px) {
+       .countdown-wrapper {
+          top: 8%;
+         }
+        html{
+          font-size: 30%;
+        }
+}
+@media only screen and (max-height: 500px) {
+
+       html{
+          font-size: 27%;
+        }
+}
+
