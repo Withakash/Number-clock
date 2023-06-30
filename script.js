@@ -8,8 +8,8 @@ const interval = setInterval(() => {
   const seconds = current.getSeconds();
 
    hours = hours % 12;
-
-
+   hours = hours ? hours : 12;
+  
   countdown.innerHTML = `
     <div data-content="Hours">${hours < 10 ? `0${hours}` : hours}</div>
     <div data-content="Minutes">${minutes < 10 ? `0${minutes}` : minutes}</div>
